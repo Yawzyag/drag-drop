@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+}
+
+.fill {
+  background-image: url("https://source.unsplash.com/random/150x150");
+  position: relative;
+  height: 150px;
+  width: 150px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  border-radius: 0.2vmin;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+.empty {
+  display: inline-block;
+  height: 165px;
+  width: 165px;
+  margin: 10px;
+  border: 3px salmon solid;
+  background-color: #fff;
+}
+
+.hold {
+  border: solid #ccc 3px;
+}
+
+.hover {
+  background: rgba(54, 255, 47, 0.5);
+  border: 3px rgb(0, 2, 128) solid;
+  border-style: dashed;
+}
+
+.invisble {
+  display: none;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
